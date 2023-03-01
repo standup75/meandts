@@ -1,0 +1,87 @@
+html
+	head
+		title Me And Ts
+	style(type="text/css").
+		body {
+			margin: 20px;
+			padding: 20px;
+			background: #F4F0EC;
+			font-family: Helvetica, Arial;
+		}
+		ul {
+			padding: 0;
+			list-style: none;
+		}
+		li input {
+			margin: 10px;
+		}
+		button[type=submit] {
+			padding: 10px;
+			text-transform: uppercase;
+		}
+		#thankyou {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(0,0,0,0.5);
+			display: none;
+		}
+		#thankyou div {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 500px;
+			height: 200px;
+			text-align: center;
+			font-size: 30px;
+			box-sizing: border-box;
+			padding-top: 85px;
+			margin: -100px 0 0 -250px;
+			border-radius: 50px;
+			background: #fff;
+		}
+		textarea {
+			width: 300px;
+			height: 150px;
+			margin: 20px 0;
+			display: block;
+			outline: none;
+			padding: 10px;
+		}
+	script.
+		function redirect(ev) {
+			ev.stopPropagation()
+			ev.preventDefault()
+			document.getElementById('thankyou').style.display = 'block'
+			setTimeout(() => {
+				location.href = 'https://meandts.com';
+			}, 1500)
+		}
+	body
+		h1 You are now unsubscribed to our newsletter
+		form(onsubmit="redirect(event)")
+			ul
+				li
+					input(type="radio")
+					span I no longer want to receive these emails
+				li
+					input(type="radio")
+					span I did not request emails from this sender
+				li
+					input(type="radio")
+					span This is not the content I expected
+				li
+					input(type="radio")
+					span I receive emails more often than I expected
+				li
+					input(type="radio")
+					span This email is SPAM and should be reported
+				li
+					input(type="radio")
+					span I have previously unsubscribed
+			textarea(placeholder="Comments")
+			button(type="submit") submit
+			div(id="thankyou")
+				div Thank you!

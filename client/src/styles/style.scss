@@ -1,0 +1,363 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?du8k3b') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?du8k3b') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?du8k3b##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="sw-"], [class*=" sw-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sw-angle_up {
+  &:before {
+    content: $sw-angle_up; 
+  }
+}
+.sw-arrow {
+  &:before {
+    content: $sw-arrow; 
+  }
+}
+.sw-binance {
+  &:before {
+    content: $sw-binance;     
+    color: #f3ba2f;
+  }
+}
+.sw-binanceus {
+  &:before {
+    content: $sw-binanceus;     
+    color: #f3ba2f;
+  }
+}
+.sw-bitfinex {
+  &:before {
+    content: $sw-bitfinex;     
+    color: #97c554;
+  }
+}
+.sw-bitstamp {
+  &:before {
+    content: $sw-bitstamp;     
+    color: #14a049;
+  }
+}
+.sw-bittrex {
+  &:before {
+    content: $sw-bittrex;     
+    color: #0082d7;
+  }
+}
+.sw-carrot_down {
+  &:before {
+    content: $sw-carrot_down; 
+  }
+}
+.sw-carrot_left {
+  &:before {
+    content: $sw-carrot_left; 
+  }
+}
+.sw-carrot_right {
+  &:before {
+    content: $sw-carrot_right; 
+  }
+}
+.sw-carrot_up {
+  &:before {
+    content: $sw-carrot_up; 
+  }
+}
+.sw-check {
+  &:before {
+    content: $sw-check; 
+  }
+}
+.sw-cog {
+  &:before {
+    content: $sw-cog; 
+  }
+}
+.sw-coinbasepro {
+  &:before {
+    content: $sw-coinbasepro;     
+    color: #d8d8d8;
+  }
+}
+.sw-coins {
+  &:before {
+    content: $sw-coins; 
+  }
+}
+.sw-copy {
+  &:before {
+    content: $sw-copy; 
+  }
+}
+.sw-cross {
+  &:before {
+    content: $sw-cross;     
+    color: #fff;
+  }
+}
+.sw-dot_empty {
+  &:before {
+    content: $sw-dot_empty; 
+  }
+}
+.sw-dot {
+  &:before {
+    content: $sw-dot; 
+  }
+}
+.sw-down .path1 {
+  &:before {
+    content: $sw-down-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.sw-down .path2 {
+  &:before {
+    content: $sw-down-path2;  
+    margin-left: -1em;  
+    color: rgb(34, 31, 31);
+  }
+}
+.sw-fastforward {
+  &:before {
+    content: $sw-fastforward;     
+    color: #fff;
+  }
+}
+.sw-gemini {
+  &:before {
+    content: $sw-gemini;     
+    color: #00dcfa;
+  }
+}
+.sw-hashtag_merge {
+  &:before {
+    content: $sw-hashtag_merge; 
+  }
+}
+.sw-hashtag {
+  &:before {
+    content: $sw-hashtag; 
+  }
+}
+.sw-history {
+  &:before {
+    content: $sw-history; 
+  }
+}
+.sw-kraken {
+  &:before {
+    content: $sw-kraken;     
+    color: #0088bd;
+  }
+}
+.sw-kucoin {
+  &:before {
+    content: $sw-kucoin;     
+    color: #0096e5;
+  }
+}
+.sw-list {
+  &:before {
+    content: $sw-list; 
+  }
+}
+.sw-lock {
+  &:before {
+    content: $sw-lock; 
+  }
+}
+.sw-magnifier {
+  &:before {
+    content: $sw-magnifier; 
+  }
+}
+.sw-market {
+  &:before {
+    content: $sw-market; 
+  }
+}
+.sw-merge {
+  &:before {
+    content: $sw-merge; 
+  }
+}
+.sw-new_order {
+  &:before {
+    content: $sw-new_order; 
+  }
+}
+.sw-order {
+  &:before {
+    content: $sw-order; 
+  }
+}
+.sw-pause {
+  &:before {
+    content: $sw-pause;     
+    color: #fff;
+  }
+}
+.sw-paw {
+  &:before {
+    content: $sw-paw; 
+  }
+}
+.sw-pen {
+  &:before {
+    content: $sw-pen; 
+  }
+}
+.sw-piggy {
+  &:before {
+    content: $sw-piggy; 
+  }
+}
+.sw-pin {
+  &:before {
+    content: $sw-pin; 
+  }
+}
+.sw-play {
+  &:before {
+    content: $sw-play;     
+    color: #fff;
+  }
+}
+.sw-plus {
+  &:before {
+    content: $sw-plus; 
+  }
+}
+.sw-poloniex {
+  &:before {
+    content: $sw-poloniex;     
+    color: #25979b;
+  }
+}
+.sw-profile {
+  &:before {
+    content: $sw-profile; 
+  }
+}
+.sw-refresh {
+  &:before {
+    content: $sw-refresh; 
+  }
+}
+.sw-session {
+  &:before {
+    content: $sw-session; 
+  }
+}
+.sw-share_android {
+  &:before {
+    content: $sw-share_android; 
+  }
+}
+.sw-share_ios {
+  &:before {
+    content: $sw-share_ios; 
+  }
+}
+.sw-sharp {
+  &:before {
+    content: $sw-sharp; 
+  }
+}
+.sw-spinner {
+  &:before {
+    content: $sw-spinner; 
+  }
+}
+.sw-star_full {
+  &:before {
+    content: $sw-star_full;     
+    color: #e2e909;
+  }
+}
+.sw-star {
+  &:before {
+    content: $sw-star; 
+  }
+}
+.sw-stop {
+  &:before {
+    content: $sw-stop;     
+    color: #fff;
+  }
+}
+.sw-thumbsup_full {
+  &:before {
+    content: $sw-thumbsup_full; 
+  }
+}
+.sw-thumbsup {
+  &:before {
+    content: $sw-thumbsup; 
+  }
+}
+.sw-trash {
+  &:before {
+    content: $sw-trash; 
+  }
+}
+.sw-up .path1 {
+  &:before {
+    content: $sw-up-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.sw-up .path2 {
+  &:before {
+    content: $sw-up-path2;  
+    margin-left: -1em;  
+    color: rgb(34, 31, 31);
+  }
+}
+.sw-wallet {
+  &:before {
+    content: $sw-wallet; 
+  }
+}
+.sw-x {
+  &:before {
+    content: $sw-x; 
+  }
+}
+.sw-xbtce {
+  &:before {
+    content: $sw-xbtce;     
+    color: #fff;
+  }
+}
+.sw-yobit {
+  &:before {
+    content: $sw-yobit;     
+    color: #00a9d2;
+  }
+}
+
